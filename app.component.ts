@@ -93,6 +93,7 @@ export class AppComponent {
   public expandMode: ExpandMode = 'Multiple';
   //Initialize the flowshapes for the symbol palatte
   private flowshapes: NodeModel[] = [
+    { id: "dwf", shape: { type: "Image", source: 'https://media-exp1.licdn.com/dms/image/C4E0BAQFWeSY1A9FsWg/company-logo_200_200/0/1585225608544?e=1657152000&v=beta&t=ulx3lc92TzbIzU7yL6OuK_lplMH4D_f8DLpWGgIWgHo'} },
     { id: 'Terminator', shape: { type: 'Flow', shape: 'Terminator' } },
     { id: 'Process', shape: { type: 'Flow', shape: 'Process' } },
     { id: 'Decision', shape: { type: 'Flow', shape: 'Decision' } },
