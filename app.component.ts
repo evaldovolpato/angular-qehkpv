@@ -5,6 +5,7 @@ import {
   SymbolInfo, IDragEnterEventArgs, SnapSettingsModel, MarginModel, TextStyleModel, StrokeStyleModel,
   OrthogonalSegmentModel, Node, PaletteModel
 } from '@syncfusion/ej2-diagrams';
+import { DiagramConstraints } from '@syncfusion/ej2-diagrams/src/diagram/enum/enum';
 import { ExpandMode } from '@syncfusion/ej2-navigations';
 import { paletteIconClick } from './script/diagram-common';
 Diagram.Inject(UndoRedo);
@@ -26,6 +27,7 @@ export class AppComponent {
   constructor() {​​​​​​​
     
 }​​​​​​​
+  public constraints: DiagramConstraints = DiagramConstraints.Default | (DiagramConstraints.Bridging | DiagramConstraints.LineRouting);
   public terminator: FlowShapeModel = { type: 'Flow', shape: 'Terminator' };
   public process: FlowShapeModel = { type: 'Flow', shape: 'Process' };
   public decision: FlowShapeModel = { type: 'Flow', shape: 'Decision' };
